@@ -8,12 +8,7 @@
                     </li>
                     <li>
                         <router-link v-show='int' to="/"><i class="far fa-newspaper"></i>
-                            <span>Tabla Alumnos</span>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link v-show='int' to="/studentForm"><i class="fas fa-home"></i>
-                            <span>Nuevo Alumno</span>
+                            <span>Welcome</span>
                         </router-link>
                     </li>
                 </ul>

@@ -14,7 +14,7 @@
         },
         data() {
             return {
-                about: 'About us',
+                about: 'Welcome',
                 hero: 'Super Vue'
             }
         }

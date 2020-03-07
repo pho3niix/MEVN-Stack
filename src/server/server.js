@@ -39,16 +39,10 @@ app.use(express.static('dist'));
 
 //Routes variables
 const rest = require('./routes/index');
-const students = require('./routes/studentRoutes');
-const teachers = require('./routes/teachersRoutes');
-const groups = require('./routes/groupRoutes');
 
 //Routes
 const urlBase = '/garden/api';
 app.use(`${urlBase}/rest`, rest);
-app.use(`${urlBase}/students`, students);
-app.use(`${urlBase}/teachers`, teachers);
-app.use(`${urlBase}/groups`, groups);
 
 // Not found error template
 app.use(function(req, res, next) {

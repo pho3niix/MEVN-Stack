@@ -1,9 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
 import notf from './components/notFound.vue';
 import About from './views/About.vue';
-import studentForm from './views/studentForm.vue';
 
 Vue.use(Router);
 
@@ -13,7 +11,7 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            component: Home,
+            component: About,
             meta: {
                 title: 'Home'
             }
@@ -28,22 +26,6 @@ export default new Router({
         {
             path: '*',
             redirect: '/NotFound'
-        },
-        {
-            path: '/about',
-            name: 'about',
-            component: About,
-            meta: {
-                title: 'About'
-            }
-        },
-        {
-            path: '/studentForm',
-            name: 'studentForm',
-            component: studentForm,
-            meta:{
-                title: 'Student Form'
-            }
         }
     ]
 });
