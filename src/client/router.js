@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import notf from './components/notFound.vue';
 import About from './views/About.vue';
+import Hello from './components/Hello.vue';
 
 Vue.use(Router);
 
@@ -11,9 +12,17 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            component: About,
+            component: Hello,
             meta: {
                 title: 'Home'
+            }
+        },
+        {
+            path:'/about',
+            name:'about',
+            component:About,
+            meta:{
+                title:'About'
             }
         },
         {
